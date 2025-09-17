@@ -29,7 +29,7 @@ A modern web application that analyzes text content to extract and count brand m
    cd ./ (root)
    docker compose up -d
    cd backend
-   npx prisma migrate dev
+   npx prisma migrate dev --name init
    npx prisma generate
    ```
 
