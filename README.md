@@ -12,14 +12,13 @@ A modern web application that analyzes text content to extract and count brand m
 
 2. **Install dependencies**
    ```bash
-   # Install root dependencies
+   # Install backend dependencies
+   cd backend
    npm install
    
-   # Install backend dependencies
-   cd backend && npm install
-   
    # Install frontend dependencies
-   cd ../frontend && npm install
+   cd ../frontend
+   npm install
 
    # Change the .env.sample to .env
 
@@ -27,7 +26,7 @@ A modern web application that analyzes text content to extract and count brand m
 
 4. **Set up database**
    ```bash
-   cd prompttracker
+   cd ./ (root)
    docker compose up -d
    cd backend
    npx prisma migrate dev
