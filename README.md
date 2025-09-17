@@ -21,6 +21,7 @@ A modern web application that analyzes text content to extract and count brand m
    npm install
 
    # Change the .env.sample to .env
+   create a Gemini key for free with a few clicks in Google AI Studio.
 
    ```
 
