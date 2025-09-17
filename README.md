@@ -29,17 +29,19 @@ A modern web application that analyzes text content to extract and count brand m
    cd ./ (root)
    docker compose up -d
    cd backend
-   npx prisma migrate dev --name init
+   npx prisma migrate dev
    npx prisma generate
    ```
 
 5. **Start the application**
    ```bash
    # Terminal 1 - Start backend (from project root)
-   cd backend && npm run start:dev
+   cd backend
+   npm run start:dev
    
    # Terminal 2 - Start frontend (from project root)
-   cd frontend && npm run dev
+   cd frontend
+   npm run dev
    ```
 
 6. **Access the application**
