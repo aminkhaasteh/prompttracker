@@ -1,0 +1,38 @@
+{
+  "name": "prompttracker",
+  "version": "1.0.0",
+  "description": "AI-powered brand mention analyzer with modern web interface",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run start:dev\" \"cd frontend && npm run dev\"",
+    "build": "cd backend && npm run build && cd ../frontend && npm run build",
+    "start": "concurrently \"cd backend && npm run start\" \"cd frontend && npm run start\"",
+    "setup": "npm run install:all && cd backend && npx prisma migrate dev && npx prisma generate"
+  },
+  "keywords": [
+    "ai",
+    "brand-detection",
+    "text-analysis",
+    "nextjs",
+    "nestjs",
+    "gemini"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aminkhaasteh/prompttracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aminkhaasteh/prompttracker/issues"
+  },
+  "homepage": "https://github.com/aminkhaasteh/prompttracker#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
