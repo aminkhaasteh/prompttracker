@@ -19,11 +19,14 @@ A modern web application that analyzes text content to extract and count brand m
    # Install frontend dependencies
    cd ../frontend
    npm install
-
-   # Change the .env.sample to .env
-   create a Gemini key for free with a few clicks in Google AI Studio.
-
    ```
+
+   2. **Change the .env.sample to .env**
+   ```bash
+   # create a Gemini key for free with a few clicks in Google AI Studio.
+   GEMINI_API_KEY="YOUR_KEY"
+      ```
+
 
 3. **Set up database**
    ```bash
