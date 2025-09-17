@@ -24,7 +24,7 @@ A modern web application that analyzes text content to extract and count brand m
 
    ```
 
-4. **Set up database**
+3. **Set up database**
    ```bash
    cd ./ (root)
    docker compose up -d
@@ -33,7 +33,7 @@ A modern web application that analyzes text content to extract and count brand m
    npx prisma generate
    ```
 
-5. **Start the application**
+4. **Start the application**
    ```bash
    # Terminal 1 - Start backend (from project root)
    cd backend
@@ -44,11 +44,10 @@ A modern web application that analyzes text content to extract and count brand m
    npm run dev
    ```
 
-6. **Access the application**
+5. **Access the application**
    - Frontend: http://localhost:3001
    - Backend API: http://localhost:3000
 
 
-### Database Schema
-- `lLMResponse` - Stores original text inputs
-- `mention` - Stores brand detection results
+### If i had more time
+- I would add a caching layer so that before sending text to the LLM, the API first checks our database to see if we’ve already processed the same response (using a simple text hash as a key). If a match is found, we immediately return the stored brands and mention counts, avoiding an unnecessary API call. Only if no cached result exists do we call the LLM, extract the data, and then store it in the database for future reuse. This would save cost, reduce latency, and make the system more efficient.
