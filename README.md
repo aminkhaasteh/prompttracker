@@ -21,14 +21,14 @@ A modern web application that analyzes text content to extract and count brand m
    npm install
    ```
 
-   2. **Change the .env.sample to .env**
+3. **Change the .env.sample to .env**
    ```bash
    # create a Gemini key for free with a few clicks in Google AI Studio.
    GEMINI_API_KEY="YOUR_KEY"
       ```
 
 
-3. **Set up database**
+4. **Set up database**
    ```bash
    cd ./ (root)
    docker compose up -d
@@ -37,7 +37,7 @@ A modern web application that analyzes text content to extract and count brand m
    npx prisma generate
    ```
 
-4. **Start the application**
+5. **Start the application**
    ```bash
    # Terminal 1 - Start backend (from project root)
    cd backend
@@ -48,7 +48,7 @@ A modern web application that analyzes text content to extract and count brand m
    npm run dev
    ```
 
-5. **Access the application**
+6. **Access the application**
    - Frontend: http://localhost:3001
    - Backend API: http://localhost:3000
 
